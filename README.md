@@ -1,6 +1,10 @@
 Magento on OpenShift
 ====================
 
+NOW UPDATED TO MAGENTO 1.9.0.1 CE
+SAMPLE DATA IS INSTALLED BUT WITHOUT IMAGES - OTHERWISE SAMPLE SITE TOO BIG!
+
+
 This git repository creates a Magento installation on OpenShift.
 
 Sample data is populated and the application configured automagically.
@@ -10,9 +14,11 @@ Running on OpenShift
 
 Create an account at http://www.openshift.com/
 
-Create a php-5.3 + mysql 5.1 application based on this repo's code (you can call your application whatever you want)
+Create a php-5.4 + mysql 5.1 application based on this repo's code (you can call your application whatever you want)
 
-    rhc app create $appname php-5.3 mysql-5.1 --from-code=https://github.com/openshift/magento-example
+    rhc app create $appname php-5.4 mysql-5.1 --from-code=https://github.com/openshift/magento-example
+
+    add -s switch to above if you want scaling.
 
 That's it, you can now checkout your application at:
 
